@@ -228,10 +228,6 @@ class Users extends Controller{
 				$data['email_err'] = 'Please enter email.';
 			}
 
-        // Check for name
-			if(empty($data['name'])){
-				$data['name_err'] = 'Please enter name.';
-			}
 
         // Check for user
 			
