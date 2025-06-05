@@ -1,0 +1,265 @@
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+/* bootstrap aditions  */
+.fs-7 {
+  font-size: 0.85rem !important;
+}
+
+
+/* NUCLEO ICONS STUFF */
+
+.icon {
+  position: relative;
+  top:  2px;
+}
+
+.it-1 {
+  top:  1px;
+}
+
+.it-2 {
+  top:  2px;
+}
+
+.it-3 {
+  top:  3px;
+}
+
+/* GENERAL CSS */
+
+a {
+  text-decoration: none;
+}
+
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.2s;
+  overflow-y: scroll;
+  background: #062442;
+}
+
+.vertical-nav * {
+  transition: all 0.2s;
+}
+
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.2s;
+  min-height: 100vh;
+}
+
+
+.vertical-nav-hidden {
+  margin-left: -17rem;
+}
+
+.page-content-full {
+  width: 100%;
+  margin-left: 0;
+}
+
+
+.vertical-nav-small {
+  padding-top:  50px;
+  min-width: 4rem;
+  width: 4rem;
+}
+
+.vertical-nav-small .sidebar-logo,
+.vertical-nav-small .nav-item-text {
+  display:  none;
+}
+
+.vertical-nav-small ul {
+  text-align:  center;
+}
+
+.vertical-nav-small .sub-nav {
+  padding-left: 5px;
+}
+
+.page-content-maxed {
+  width: calc(100% - 4rem);
+  margin-left: 4rem;
+}
+
+.js-table-item-edit {
+  cursor:  pointer;
+}
+
+.sub-nav {
+  padding-left: 20px;
+  /*display:  none;*/
+}
+
+.sub-nav li a.nav-link {
+  padding: 0rem 1rem; ;
+}
+
+.bootstrap-select>.dropdown-toggle {
+  border: 1px solid #ced4da !important;
+}
+
+.js-connections-content {
+  display: none;
+}
+
+
+/* SCROLL BAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #062442;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* CALENDAR AUTO  */
+
+/* Booked days are highlighted in yellow */
+.my-bookings-table {
+  white-space: nowrap;
+}
+
+.my-bookings-table .bg-warning {
+    background-color: yellow !important;
+}
+
+/* Available days are white */
+.my-bookings-table .bg-white {
+    background-color: white !important;
+}
+
+.my-bookings-table td {
+  padding:  5px;
+}
+
+.my-bookings-table td[colspan="1"] {
+  max-width: 59px;
+  overflow: hidden;
+}
+
+.fht-cell {
+  padding: 5px;
+}
+
+.my-bookings-table th:first-child, 
+.my-bookings-table td:first-child {
+  position: sticky;
+  left: -1rem;
+  z-index: 1; /* Ensure it stays above other cells */
+  background-color: white; /* Keep the background solid */
+}
+
+.my-list-table th,
+.my-list-table td {
+    white-space: nowrap; /* Prevent wrapping of text */
+    padding:  10px 20px;
+   
+}
+
+/* Hide the native time picker UI in Chrome */
+input[type="time"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+
+
+/* for fields in the form highlighted for various reasons - first used for accepted offers in carhunt  */
+.highlighted {
+    background-color: yellow;
+    border: 2px solid #ffa500;
+}
+
+
+/* Calendar table container (left column) scroll */
+.calendar-container {
+    max-height: calc(100vh - 200px); /* Adjust as needed */
+    overflow-y: auto;
+    overflow-x: auto; /* Or auto if horizontal scrolling is desired */
+    padding: 10px;
+}
+
+/* Offers sidebar container (right column) scroll */
+.offers-container {
+    max-height: calc(100vh - 200px); /* Adjust as needed */
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+
+/* hide the extra-info block until the card is active in calendar view*/
+.js-calendar-offer-card .extra-info {
+  display: none;
+}
+
+/* when card has .active, show it */
+.js-calendar-offer-card.active .extra-info {
+  display: block;
+}
+
+
+
+.pulse {
+    animation: pulseAnimation 1s ease-in-out infinite;
+}
+
+.ui-timepicker-container {
+    z-index: 1056 !important; /* Just above Bootstrap modal (default modal is 1050) */
+}
+
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(255, 165, 0, 0.8);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(255, 165, 0, 0.6);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px rgba(255, 165, 0, 0.8);
+    }
+}
+
+
+
+/* Make sure the table fits into smaller screens */
+@media (max-width: 768px) {
+    .table {
+        font-size: 10px;
+    }
+
+    .table td, .table th {
+        width: 15px;
+        height: 15px;
+    }
+}

@@ -1,0 +1,23 @@
+# Dependency directories
+/vendor/
+composer.phar
+
+# Node (if you ever add front-end tooling)
+node_modules/
+
+# Environment and config files
+.env
+
+# Logs and runtime files
+*.log
+/logs/
+/storage/
+
+# IDE & OS junk
+.DS_Store
+.idea/
+.vscode/
+
+# Backups
+*.bak
+*.tmp

@@ -1,0 +1,12 @@
+{
+    "require": {
+        "microsoft/microsoft-graph": "^2.12",
+        "league/oauth2-client": "^2.7",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}

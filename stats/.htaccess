@@ -1,0 +1,7 @@
+AuthName "erp.optictotal.ro statistics"
+AuthType Basic
+AuthUserFile /home/optictotal.ro/domains/erp.optictotal.ro/.stats-htpasswd
+require valid-user
+<Files .stats-htpasswd>
+deny from all
+</Files>

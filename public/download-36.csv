@@ -1,0 +1,8 @@
+Producator,Nume,Model,Serie,Activ,Functional,Organizatie,Sectie,"Nume (crm vechi)"
+MCE,Pathfast,,0704A0504,Nu,Nu,"Spital Cl. Jud. Ilfov - CUI: 14989140",Cardiologie,Pathfast
+MCE,Pathfast,,1102B1230,Nu,Da,"Spital Cl. Jud. Ilfov - CUI: 14989140",UPU,Pathfast
+MCE,Pathfast,D,1903D3407,Da,Da,"Spital Cl. Jud. Ilfov - CUI: 14989140",UPU,
+TMC,"Gastat 735",,09070904,Da,Da,"Spital Cl. Jud. Ilfov - CUI: 14989140",ATI,
+TMC,"Gastat 735",735,,Da,Da,"Spital Cl. Jud. Ilfov - CUI: 14989140",UPU,
+TMC,"Gastat 735",735,,Nu,Nu,"Spital Cl. Jud. Ilfov - CUI: 14989140","ATI Neonatologie",
+TMC,"Gastat 735",735,,Nu,Nu,"Spital Cl. Jud. Ilfov - CUI: 14989140","Medicala 1",
