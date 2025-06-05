@@ -21,3 +21,8 @@ node_modules/
 # Backups
 *.bak
 *.tmp
+
+# Others
+/stats/
+/public/mailtest/
+/public/msgraph-training-php/
